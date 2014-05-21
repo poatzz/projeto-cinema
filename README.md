@@ -4,8 +4,8 @@ Projeto integrado das disciplinas de Estrutura de Dados I, Introdução aos Sist
 
 ## Sumário
 
- - [Estrutura do projeto](#estrutura)
- - [Documentação](#documentacao)
+ - [Estrutura do projeto](#estrutura do projeto)
+ - [Documentação](#documentação)
  - [Equipe](#equipe)
 
 ## Estrutura do Projeto
