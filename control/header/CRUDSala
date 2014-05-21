@@ -1,0 +1,4 @@
+namespace control {
+	class CRUDSala {
+	};
+};
