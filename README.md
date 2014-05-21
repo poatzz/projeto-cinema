@@ -29,10 +29,10 @@ A construir.
 
 ## Equipe
 
-** Felipe Lara **
+**Felipe Lara**
 
-** Guilherme Gois **
+**Guilherme Gois**
 
-** Marcelo Irei **
+**Marcelo Irei**
 
-** Matheus Barbieri **
+**Matheus Barbieri**
