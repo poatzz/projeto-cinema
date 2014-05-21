@@ -1,0 +1,4 @@
+namespace boundary {
+	class FormSala {
+	};
+};
