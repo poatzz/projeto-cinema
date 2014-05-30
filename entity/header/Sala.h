@@ -1,3 +1,7 @@
+#ifndef SALA_H
+
+#define SALA_H
+
 namespace entity
 {
   class Sala
@@ -8,19 +12,24 @@ namespace entity
       Situacao situacao;
       
     public:
-      int getCapacidade():
-      int getNumSala();
-      Situacao getSituacao();
-      void setCapacidade(int);
-      void setNumSala(int);
-      void setSituacao(Situacao);
-  };
-  
-  enum Situacao
-  {
-    DISPONIVEL,
-    MANUEQUIPAMENTO,
-    REFORMA,
-    MANUGERAL
+      int
+      getCapacidade():
+      
+      int
+      getNumSala();
+      
+      Situacao
+      getSituacao();
+      
+      void
+      setCapacidade(int);
+      
+      void
+      setNumSala(int);
+      
+      void
+      setSituacao(Situacao);
   };
 };
+
+#endif
