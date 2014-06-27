@@ -1,19 +1,18 @@
-#ifndef __FILEIRA_H_
+#ifndef __FILEIRA_HPP_
 
-#define __FILEIRA_H_
+#define __FILEIRA_HPP_
 
-namespace entity
-{
-  class Fileira
-  {
-    public:
-      char idFileira;
+#include "../../libraries/cplusplus/data_structures/FilaEstatica.hpp"
+#include "Assento.hpp"
 
-      
-    private:
-      boolean
-      verificarDisponibilidade();
-  };
+template <class Assento>
+class Fileira {
+  private:
+    char _idFileira;
+    FilaEstatica<Assento> _assentos;
+  
+  public:
+    Fileira(char id);
 };
 
-#endif /* __FILEIRA_H_ */
+#endif /* __FILEIRA_HPP_ */

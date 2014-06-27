@@ -1,35 +1,27 @@
-#ifndef SALA_H
+#ifndef __SALA_HPP_
 
-#define SALA_H
+#define __SALA_HPP_
 
-namespace entity
-{
-  class Sala
-  {
-    private:
-      int capacidade;
-      int numSala;
-      Situacao situacao;
-      
-    public:
-      int
-      getCapacidade():
-      
-      int
-      getNumSala();
-      
-      Situacao
-      getSituacao();
-      
-      void
-      setCapacidade(int);
-      
-      void
-      setNumSala(int);
-      
-      void
-      setSituacao(Situacao);
-  };
+#include "../../libraries/cplusplus/data_structures/ListaDinamica.hpp"
+#include "Fileira.hpp"
+#include "../enumeration/Situacao.hpp"
+
+template <class Fileira>
+class Sala {
+  private:
+    unsigned int _capacidade;
+    unsigned int _numSala;
+    Situacao _situacao;
+    ListaDinamica<Fileira> _fileiras;
+
+  public:
+    Sala(unsigned int numSala, unsigned int capacidade = 200);
+    unsigned int getCapacidade() const;
+    void setCapacidade(unsigned int capacidade);
+    unsigned int getNumSala() const;
+    void setNumSala(int);
+    Situacao getSituacao() const;
+    void setSituacao(Situacao);
 };
 
-#endif
+#endif /* __SALA_HPP_ */

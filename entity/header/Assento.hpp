@@ -1,6 +1,6 @@
-#ifdef __ASSENTO_H_
+#ifdef __ASSENTO_HPP_
 
-#define __ASSENTO_H_
+#define __ASSENTO_HPP_
 
 class Assento {
   private:
@@ -30,4 +30,4 @@ void Assento::setDiponibilidade(bool disponibilidade) {
   Assento::_disponibilidade = disponibilidade;
 }
 
-#endif /* __ASSENTO_H_ */
+#endif /* __ASSENTO_HPP_ */

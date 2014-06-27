@@ -1,30 +1,27 @@
-#include <ctime>
+#ifndef __INGRESSO_HPP_
 
-#ifnef INGRESSO_H
+#define __INGRESSO_HPP_
 
-#define INGRESSO_H
+#include "../enumeration/Tipo.hpp"
+#include "Sessao.hpp"
 
-namespace entity
-{
-  class Ingresso
-  {
-    public:
-      time_t dtIngresso;
-      double valor;
-      
-    private:
-      time_t
-      getDtIngresso();
-      
-      double
-      getValor();
-      
-      void
-      setDtIngresso(time_t);
-      
-      void
-      setValor(double);
-  };
+template <class Hora, class Fileira, class EquipeFilme>
+class Ingresso {
+  public:
+    Sessao<Hora, Fileira, EquipeFilme> _sessao;
+    double _valor;
+    Tipo _tipo;
+    char _poltrona[2];
+
+  private:
+    Ingresso(Sessao<Hora, Fileira, EquipeFilme> _sessao);
+    Sessao<Hora, Fileira, EquipeFilme> getSessao() const;
+    double getValor() const;
+    void setValor(double valor);
+    Tipo getTipo() const;
+    void setTipo(Tipo tipo);
+    char* getPoltrona() const;
+    void setPoltrona(char poltrona[2]);
 };
 
-#endif
+#endif /* __INGRESSO_HPP_ */
