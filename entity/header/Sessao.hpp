@@ -15,7 +15,7 @@ template <class Hora, class Fileira, class EquipeFilme>
 class Sessao {
   private:
     Filme<EquipeFilme> _filme;
-    Sala<Fileira> _sala;
+    Sala<Fileira> _salas;
     std::map<Hora, unsigned int> _horarios;
     Data _data;
     bool _encerrada;
@@ -24,8 +24,8 @@ class Sessao {
     Sessao(Data data);
     Filme<EquipeFilme> getFilme() const;
     void setFilme(Filme<EquipeFilme> filme);
-    Sala<Fileira> getSala() const;
-    void setSala(Sala<Fileira> sala);
+    Sala<Fileira> getSalas() const;
+    void setSalas(Sala<Fileira> sala);
     PilhaDinamica<Hora> getHorarios() const;
     void setHorario(Hora gorario);
     unsigned int getNumVendidos(Hora horario) const;

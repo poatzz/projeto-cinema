@@ -19,9 +19,9 @@ class Sala {
     unsigned int getCapacidade() const;
     void setCapacidade(unsigned int capacidade);
     unsigned int getNumSala() const;
-    void setNumSala(int);
+    void setNumSala(unsigned int numSala);
     Situacao getSituacao() const;
-    void setSituacao(Situacao);
+    void setSituacao(Situacao situacao);
 };
 
 #endif /* __SALA_HPP_ */

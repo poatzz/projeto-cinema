@@ -27,7 +27,7 @@ class Filme {
     Hora getDuracao() const;
     Genero getGenero() const;
     ListaDinamica<EquipeFilme> getEquipe() const;
-    void addEquipe(EquipeFilme equipe);
+    void addEquipe(EquipeFilme * equipe);
     void removeEquipe(string nomeEquipe);
 };
 

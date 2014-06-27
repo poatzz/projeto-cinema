@@ -1,4 +1,4 @@
-#ifdef __ASSENTO_HPP_
+#ifndef __ASSENTO_HPP_
 
 #define __ASSENTO_HPP_
 
@@ -13,21 +13,5 @@ class Assento {
     bool getDisponibilidade() const;
     void setDiponibilidade(bool disponibilidade);
 };
-
-Assento::Assento(int idAssento) {
-  Assento::_idAssento = idAssento;
-}
-
-int Assento::getIdAssento() const {
-  return Assento::_idAssento;
-}
-
-bool Assento::getDisponibilidade() const {
-  return Assento::_disponibilidade;
-}
-
-void Assento::setDiponibilidade(bool disponibilidade) {
-  Assento::_disponibilidade = disponibilidade;
-}
 
 #endif /* __ASSENTO_HPP_ */
